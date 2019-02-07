@@ -1,0 +1,117 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/jayeshkacha/Documents/exp/alphab/source/github/Doric/Source/CardView.swift",
+      "line": 42,
+      "symbol": "CardView.layoutSubviews()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jayeshkacha/Documents/exp/alphab/source/github/Doric/Source/DesignDebuggerViewController.swift",
+      "line": 33,
+      "symbol": "Settings.init(spacing:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jayeshkacha/Documents/exp/alphab/source/github/Doric/Source/GradientView.swift",
+      "line": 57,
+      "symbol": "GradientView.layerClass",
+      "symbol_kind": "source.lang.swift.decl.var.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jayeshkacha/Documents/exp/alphab/source/github/Doric/Source/GradientView.swift",
+      "line": 61,
+      "symbol": "GradientView.layoutSubviews()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jayeshkacha/Documents/exp/alphab/source/github/Doric/Source/Implemented.swift",
+      "line": 39,
+      "symbol": "DualThemeManager.init(mainTheme:alternateTheme:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jayeshkacha/Documents/exp/alphab/source/github/Doric/Source/Implemented.swift",
+      "line": 138,
+      "symbol": "SystemTypography.FontStyle",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jayeshkacha/Documents/exp/alphab/source/github/Doric/Source/Notification.swift",
+      "line": 28,
+      "symbol": "ThemeNotification.didChange",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jayeshkacha/Documents/exp/alphab/source/github/Doric/Source/Scale.swift",
+      "line": 94,
+      "symbol": "Transparency",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jayeshkacha/Documents/exp/alphab/source/github/Doric/Source/Style.swift",
+      "line": 27,
+      "symbol": "Style.TargetControl",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jayeshkacha/Documents/exp/alphab/source/github/Doric/Source/Typography.swift",
+      "line": 47,
+      "symbol": "Typography.FontStyle",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jayeshkacha/Documents/exp/alphab/source/github/Doric/Source/Typography.swift",
+      "line": 73,
+      "symbol": "FontDescription.init(name:size:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jayeshkacha/Documents/exp/alphab/source/github/Doric/Source/Typography.swift",
+      "line": 81,
+      "symbol": "FontConvertible.font",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jayeshkacha/Documents/exp/alphab/source/github/Doric/Source/Typography.swift",
+      "line": 85,
+      "symbol": "FontDescription.font",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jayeshkacha/Documents/exp/alphab/source/github/Doric/Source/Typography.swift",
+      "line": 92,
+      "symbol": "Font.TextStyle",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jayeshkacha/Documents/exp/alphab/source/github/Doric/Source/Typography.swift",
+      "line": 154,
+      "symbol": "DynamicTypeCustomTextStyleFont.preferredFont(forTextStyle:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jayeshkacha/Documents/exp/alphab/source/github/Doric/Source/Typography.swift",
+      "line": 155,
+      "symbol": "DynamicTypeCustomTextStyleFont.preferredFont(forTextStyle:maximumPointSize:compatibleWith:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/jayeshkacha/Documents/exp/alphab/source/github/Doric"
+}

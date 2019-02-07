@@ -1,0 +1,12 @@
+author: Jay K
+author_url: https://github.com/jayeshk/Doric
+github_url: https://github.com/jayeshk/Doric
+root_url: https://github.com/jayeshk/Doric/
+module: Doric
+output: docs
+theme: apple
+xcodebuild_arguments: [-project, 'Doric.xcodeproj', -scheme, 'Doric']
+theme: apple
+exclude:
+  - './Source/Debug+Preview.swift'
+documentation: Documentation/*.md

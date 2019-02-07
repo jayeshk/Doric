@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		246773132205F3F10069E684 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246773122205F3F10069E684 /* AppDelegate.swift */; };
+		2467731A2205F3F20069E684 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 246773192205F3F20069E684 /* Assets.xcassets */; };
+		2467731D2205F3F20069E684 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2467731B2205F3F20069E684 /* LaunchScreen.storyboard */; };
+		2467732B2205F4330069E684 /* Typography+Menlo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246773252205F4330069E684 /* Typography+Menlo.swift */; };
+		2467732C2205F4330069E684 /* Theme+System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246773262205F4330069E684 /* Theme+System.swift */; };
+		2467732D2205F4330069E684 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246773272205F4330069E684 /* DesignSystem.swift */; };
+		2467732E2205F4330069E684 /* Typography+AvenirNext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246773282205F4330069E684 /* Typography+AvenirNext.swift */; };
+		2467732F2205F4330069E684 /* Typography+OpenSans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246773292205F4330069E684 /* Typography+OpenSans.swift */; };
+		246773302205F4330069E684 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2467732A2205F4330069E684 /* Styles.swift */; };
+		2467733E2205F4860069E684 /* ThemeDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246773312205F4850069E684 /* ThemeDemoViewController.swift */; };
+		2467733F2205F4860069E684 /* StyleDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246773322205F4850069E684 /* StyleDemoViewController.swift */; };
+		246773402205F4860069E684 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246773332205F4850069E684 /* BaseViewController.swift */; };
+		246773412205F4860069E684 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246773342205F4860069E684 /* Utility.swift */; };
+		246773422205F4860069E684 /* ColorsDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246773352205F4860069E684 /* ColorsDemoViewController.swift */; };
+		246773432205F4860069E684 /* DemoMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246773362205F4860069E684 /* DemoMenuViewController.swift */; };
+		246773442205F4860069E684 /* ToolKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246773372205F4860069E684 /* ToolKitViewController.swift */; };
+		246773462205F4860069E684 /* ScaleChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246773392205F4860069E684 /* ScaleChartsViewController.swift */; };
+		246773472205F4860069E684 /* IconographyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2467733A2205F4860069E684 /* IconographyViewController.swift */; };
+		246773482205F4860069E684 /* TypographyDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2467733B2205F4860069E684 /* TypographyDemoViewController.swift */; };
+		246773492205F4860069E684 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2467733C2205F4860069E684 /* MenuItem.swift */; };
+		2467734A2205F4860069E684 /* LayoutDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2467733D2205F4860069E684 /* LayoutDemoViewController.swift */; };
+		2467734D2205F5260069E684 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2467734C2205F5260069E684 /* Main.storyboard */; };
+		246773522205F6620069E684 /* Doric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 246773512205F6620069E684 /* Doric.framework */; };
+		246773532205F6620069E684 /* Doric.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 246773512205F6620069E684 /* Doric.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		246773612205FC360069E684 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 246773562205FC360069E684 /* OpenSans-Semibold.ttf */; };
+		246773622205FC360069E684 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 246773572205FC360069E684 /* OpenSans-Light.ttf */; };
+		246773632205FC360069E684 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 246773582205FC360069E684 /* OpenSans-Italic.ttf */; };
+		246773642205FC360069E684 /* Apache License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 246773592205FC360069E684 /* Apache License.txt */; };
+		246773652205FC360069E684 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2467735A2205FC360069E684 /* OpenSans-ExtraBold.ttf */; };
+		246773662205FC360069E684 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2467735B2205FC360069E684 /* OpenSans-LightItalic.ttf */; };
+		246773672205FC360069E684 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2467735C2205FC360069E684 /* OpenSans-Bold.ttf */; };
+		246773682205FC360069E684 /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2467735D2205FC360069E684 /* OpenSans-SemiboldItalic.ttf */; };
+		246773692205FC360069E684 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2467735E2205FC360069E684 /* OpenSans-ExtraBoldItalic.ttf */; };
+		2467736A2205FC360069E684 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2467735F2205FC360069E684 /* OpenSans-Regular.ttf */; };
+		2467736B2205FC360069E684 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 246773602205FC360069E684 /* OpenSans-BoldItalic.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		246773542205F6620069E684 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				246773532205F6620069E684 /* Doric.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2467730F2205F3F10069E684 /* Catalogue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Catalogue.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		246773122205F3F10069E684 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		246773192205F3F20069E684 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2467731C2205F3F20069E684 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2467731E2205F3F20069E684 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		246773252205F4330069E684 /* Typography+Menlo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Typography+Menlo.swift"; sourceTree = "<group>"; };
+		246773262205F4330069E684 /* Theme+System.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Theme+System.swift"; sourceTree = "<group>"; };
+		246773272205F4330069E684 /* DesignSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
+		246773282205F4330069E684 /* Typography+AvenirNext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Typography+AvenirNext.swift"; sourceTree = "<group>"; };
+		246773292205F4330069E684 /* Typography+OpenSans.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Typography+OpenSans.swift"; sourceTree = "<group>"; };
+		2467732A2205F4330069E684 /* Styles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		246773312205F4850069E684 /* ThemeDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeDemoViewController.swift; sourceTree = "<group>"; };
+		246773322205F4850069E684 /* StyleDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleDemoViewController.swift; sourceTree = "<group>"; };
+		246773332205F4850069E684 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		246773342205F4860069E684 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		246773352205F4860069E684 /* ColorsDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsDemoViewController.swift; sourceTree = "<group>"; };
+		246773362205F4860069E684 /* DemoMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoMenuViewController.swift; sourceTree = "<group>"; };
+		246773372205F4860069E684 /* ToolKitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolKitViewController.swift; sourceTree = "<group>"; };
+		246773392205F4860069E684 /* ScaleChartsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleChartsViewController.swift; sourceTree = "<group>"; };
+		2467733A2205F4860069E684 /* IconographyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconographyViewController.swift; sourceTree = "<group>"; };
+		2467733B2205F4860069E684 /* TypographyDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypographyDemoViewController.swift; sourceTree = "<group>"; };
+		2467733C2205F4860069E684 /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		2467733D2205F4860069E684 /* LayoutDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutDemoViewController.swift; sourceTree = "<group>"; };
+		2467734C2205F5260069E684 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		246773512205F6620069E684 /* Doric.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Doric.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		246773562205FC360069E684 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		246773572205FC360069E684 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		246773582205FC360069E684 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		246773592205FC360069E684 /* Apache License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Apache License.txt"; sourceTree = "<group>"; };
+		2467735A2205FC360069E684 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		2467735B2205FC360069E684 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		2467735C2205FC360069E684 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		2467735D2205FC360069E684 /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		2467735E2205FC360069E684 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		2467735F2205FC360069E684 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		246773602205FC360069E684 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2467730C2205F3F10069E684 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				246773522205F6620069E684 /* Doric.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		246773062205F3F10069E684 = {
+			isa = PBXGroup;
+			children = (
+				246773512205F6620069E684 /* Doric.framework */,
+				246773112205F3F10069E684 /* Catalogue */,
+				246773102205F3F10069E684 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		246773102205F3F10069E684 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2467730F2205F3F10069E684 /* Catalogue.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		246773112205F3F10069E684 /* Catalogue */ = {
+			isa = PBXGroup;
+			children = (
+				2467734E2205F5990069E684 /* Common */,
+				2467734F2205F5C50069E684 /* Demo */,
+				2467734B2205F49C0069E684 /* Design */,
+				246773502205F5DF0069E684 /* Resources */,
+			);
+			path = Catalogue;
+			sourceTree = "<group>";
+		};
+		2467734B2205F49C0069E684 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				246773272205F4330069E684 /* DesignSystem.swift */,
+				2467732A2205F4330069E684 /* Styles.swift */,
+				246773262205F4330069E684 /* Theme+System.swift */,
+				246773282205F4330069E684 /* Typography+AvenirNext.swift */,
+				246773252205F4330069E684 /* Typography+Menlo.swift */,
+				246773292205F4330069E684 /* Typography+OpenSans.swift */,
+			);
+			name = Design;
+			sourceTree = "<group>";
+		};
+		2467734E2205F5990069E684 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				246773122205F3F10069E684 /* AppDelegate.swift */,
+				246773342205F4860069E684 /* Utility.swift */,
+				2467733C2205F4860069E684 /* MenuItem.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		2467734F2205F5C50069E684 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				246773332205F4850069E684 /* BaseViewController.swift */,
+				246773352205F4860069E684 /* ColorsDemoViewController.swift */,
+				246773362205F4860069E684 /* DemoMenuViewController.swift */,
+				2467733A2205F4860069E684 /* IconographyViewController.swift */,
+				2467733D2205F4860069E684 /* LayoutDemoViewController.swift */,
+				246773392205F4860069E684 /* ScaleChartsViewController.swift */,
+				246773322205F4850069E684 /* StyleDemoViewController.swift */,
+				246773312205F4850069E684 /* ThemeDemoViewController.swift */,
+				246773372205F4860069E684 /* ToolKitViewController.swift */,
+				2467733B2205F4860069E684 /* TypographyDemoViewController.swift */,
+			);
+			name = Demo;
+			sourceTree = "<group>";
+		};
+		246773502205F5DF0069E684 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				246773552205FC360069E684 /* open-sans */,
+				2467734C2205F5260069E684 /* Main.storyboard */,
+				246773192205F3F20069E684 /* Assets.xcassets */,
+				2467731B2205F3F20069E684 /* LaunchScreen.storyboard */,
+				2467731E2205F3F20069E684 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		246773552205FC360069E684 /* open-sans */ = {
+			isa = PBXGroup;
+			children = (
+				246773562205FC360069E684 /* OpenSans-Semibold.ttf */,
+				246773572205FC360069E684 /* OpenSans-Light.ttf */,
+				246773582205FC360069E684 /* OpenSans-Italic.ttf */,
+				246773592205FC360069E684 /* Apache License.txt */,
+				2467735A2205FC360069E684 /* OpenSans-ExtraBold.ttf */,
+				2467735B2205FC360069E684 /* OpenSans-LightItalic.ttf */,
+				2467735C2205FC360069E684 /* OpenSans-Bold.ttf */,
+				2467735D2205FC360069E684 /* OpenSans-SemiboldItalic.ttf */,
+				2467735E2205FC360069E684 /* OpenSans-ExtraBoldItalic.ttf */,
+				2467735F2205FC360069E684 /* OpenSans-Regular.ttf */,
+				246773602205FC360069E684 /* OpenSans-BoldItalic.ttf */,
+			);
+			path = "open-sans";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2467730E2205F3F10069E684 /* Catalogue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 246773212205F3F20069E684 /* Build configuration list for PBXNativeTarget "Catalogue" */;
+			buildPhases = (
+				2467730B2205F3F10069E684 /* Sources */,
+				2467730C2205F3F10069E684 /* Frameworks */,
+				2467730D2205F3F10069E684 /* Resources */,
+				246773542205F6620069E684 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Catalogue;
+			productName = Catalogue;
+			productReference = 2467730F2205F3F10069E684 /* Catalogue.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		246773072205F3F10069E684 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = JayK;
+				TargetAttributes = {
+					2467730E2205F3F10069E684 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 2467730A2205F3F10069E684 /* Build configuration list for PBXProject "Catalogue" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 246773062205F3F10069E684;
+			productRefGroup = 246773102205F3F10069E684 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2467730E2205F3F10069E684 /* Catalogue */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2467730D2205F3F10069E684 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				246773612205FC360069E684 /* OpenSans-Semibold.ttf in Resources */,
+				2467734D2205F5260069E684 /* Main.storyboard in Resources */,
+				2467731D2205F3F20069E684 /* LaunchScreen.storyboard in Resources */,
+				246773652205FC360069E684 /* OpenSans-ExtraBold.ttf in Resources */,
+				246773642205FC360069E684 /* Apache License.txt in Resources */,
+				246773632205FC360069E684 /* OpenSans-Italic.ttf in Resources */,
+				246773622205FC360069E684 /* OpenSans-Light.ttf in Resources */,
+				246773692205FC360069E684 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				2467731A2205F3F20069E684 /* Assets.xcassets in Resources */,
+				246773672205FC360069E684 /* OpenSans-Bold.ttf in Resources */,
+				2467736B2205FC360069E684 /* OpenSans-BoldItalic.ttf in Resources */,
+				246773662205FC360069E684 /* OpenSans-LightItalic.ttf in Resources */,
+				2467736A2205FC360069E684 /* OpenSans-Regular.ttf in Resources */,
+				246773682205FC360069E684 /* OpenSans-SemiboldItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2467730B2205F3F10069E684 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				246773462205F4860069E684 /* ScaleChartsViewController.swift in Sources */,
+				2467734A2205F4860069E684 /* LayoutDemoViewController.swift in Sources */,
+				2467732E2205F4330069E684 /* Typography+AvenirNext.swift in Sources */,
+				246773302205F4330069E684 /* Styles.swift in Sources */,
+				246773402205F4860069E684 /* BaseViewController.swift in Sources */,
+				246773472205F4860069E684 /* IconographyViewController.swift in Sources */,
+				2467732F2205F4330069E684 /* Typography+OpenSans.swift in Sources */,
+				246773432205F4860069E684 /* DemoMenuViewController.swift in Sources */,
+				246773422205F4860069E684 /* ColorsDemoViewController.swift in Sources */,
+				2467732D2205F4330069E684 /* DesignSystem.swift in Sources */,
+				246773492205F4860069E684 /* MenuItem.swift in Sources */,
+				2467732C2205F4330069E684 /* Theme+System.swift in Sources */,
+				2467732B2205F4330069E684 /* Typography+Menlo.swift in Sources */,
+				246773482205F4860069E684 /* TypographyDemoViewController.swift in Sources */,
+				246773412205F4860069E684 /* Utility.swift in Sources */,
+				2467733F2205F4860069E684 /* StyleDemoViewController.swift in Sources */,
+				2467733E2205F4860069E684 /* ThemeDemoViewController.swift in Sources */,
+				246773132205F3F10069E684 /* AppDelegate.swift in Sources */,
+				246773442205F4860069E684 /* ToolKitViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2467731B2205F3F20069E684 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2467731C2205F3F20069E684 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2467731F2205F3F20069E684 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		246773202205F3F20069E684 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		246773222205F3F20069E684 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Catalogue/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jayk.Catalogue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		246773232205F3F20069E684 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Catalogue/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jayk.Catalogue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2467730A2205F3F10069E684 /* Build configuration list for PBXProject "Catalogue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2467731F2205F3F20069E684 /* Debug */,
+				246773202205F3F20069E684 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		246773212205F3F20069E684 /* Build configuration list for PBXNativeTarget "Catalogue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				246773222205F3F20069E684 /* Debug */,
+				246773232205F3F20069E684 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 246773072205F3F10069E684 /* Project object */;
+}

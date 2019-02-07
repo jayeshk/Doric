@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Guideline Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../../js/jquery.min.js" defer></script>
+    <script src="../../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/Guideline" class="dashAnchor"></a>
+    <a title="Guideline Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../../index.html">Doric Docs</a> (94% documented)</p>
+        <p class="header-right"><a href="https://github.com/jayeshk/Doric"><img src="../../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="dash-feed://https%3A%2F%2Fgithub%2Ecom%2Fjayeshk%2FDoric%2Fdocsets%2FDoric%2Exml"><img src="../../img/dash.png"/>Install in Dash</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../../index.html">Doric Reference</a>
+        <img id="carat" src="../../img/carat.png" />
+        Guideline Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../usage.html">Usage</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Classes/CardView.html">CardView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/Doric.html">Doric</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/DualThemeManager.html">DualThemeManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/GradientView.html">GradientView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Enums/ButtonHeight.html">ButtonHeight</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/IconSize.html">IconSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/LayoutRelation.html">LayoutRelation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/Shadow.html">Shadow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/Space.html">Space</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Extensions/Bundle.html">Bundle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Extensions/Notification.html">Notification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Extensions/UIButton.html">UIButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Extensions/UIColor.html">UIColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Extensions/UIColor/System.html">– System</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Extensions/UIFont.html">UIFont</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Extensions/UIImage.html">UIImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Extensions/UIImageView.html">UIImageView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Extensions/UIStackView.html">UIStackView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Extensions/UIView.html">UIView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Extensions/UIView/Guideline.html">– Guideline</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Protocols/Color.html">Color</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/ColorPalette.html">ColorPalette</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/DarkenColorSet.html">DarkenColorSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/DualThemeSwitcher.html">DualThemeSwitcher</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/DynamicTypeCustomTextStyleFont.html">DynamicTypeCustomTextStyleFont</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/DynamicTypeFont.html">DynamicTypeFont</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/DynamicTypography.html">DynamicTypography</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/ExtendedDarkenColorSet.html">ExtendedDarkenColorSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/ExtendedLightenColorSet.html">ExtendedLightenColorSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/Font.html">Font</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/FontConvertible.html">FontConvertible</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/FullScale.html">FullScale</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/GradientColor.html">GradientColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/LargerColorPalette.html">LargerColorPalette</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/LayoutValueRepresentable.html">LayoutValueRepresentable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/LightenColorSet.html">LightenColorSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/MainColorPalette.html">MainColorPalette</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/Scale.html">Scale</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/SemanticColorPalette.html">SemanticColorPalette</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/Style.html">Style</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/SystemFont.html">SystemFont</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/Theme.html">Theme</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/ThemeListener.html">ThemeListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/ThemeManager.html">ThemeManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/ThemeSwitcher.html">ThemeSwitcher</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols.html#/s:5Doric17TransparencyLevelP">TransparencyLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/TwoStateValueLevel.html">TwoStateValueLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/Typography.html">Typography</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/TypographyOptions.html">TypographyOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/ValueLevel.html">ValueLevel</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Structs/Border.html">Border</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/CornerRadius.html">CornerRadius</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/DefaultGrayScalePalette.html">DefaultGrayScalePalette</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/DefaultSemanticColorPalette.html">DefaultSemanticColorPalette</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/FontDescription.html">FontDescription</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/Settings.html">Settings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs.html#/s:5Doric9SizeScaleV">SizeScale</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/SystemTypography.html">SystemTypography</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/ThemeNotification.html">ThemeNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/Transparency.html">Transparency</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Typealiases.html#/s:5Doric10BorderSizea">BorderSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Typealiases.html#/s:5Doric16CornerRadiusSizea">CornerRadiusSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Typealiases.html#/s:5Doric14VoiceToneLevela">VoiceToneLevel</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Guideline</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Guideline</span> <span class="p">:</span> <span class="kt">OptionSet</span></code></pre>
+
+                </div>
+              </div>
+            <p>Shows guide for an instance of view, Guideline adds single line view with constraints equivalents to edges, dimentions, baselines.</p>
+
+<p>Guideline is part of UI debug helper tools.
+Example usage can be as below, as it adds lines using autolayouts it is expected target view should be added to its superview.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">label</span> <span class="o">=</span> <span class="kt">UILabel</span><span class="p">()</span>
+<span class="o">...</span>
+<span class="o">...</span>
+<span class="c1">// Creates guidelines set to be displayed</span>
+<span class="k">let</span> <span class="nv">guidelines</span><span class="p">:</span> <span class="kt">UIView</span><span class="o">.</span><span class="kt">Guideline</span> <span class="o">=</span> <span class="p">[</span><span class="o">.</span><span class="n">leading</span><span class="p">,</span> <span class="o">.</span><span class="n">firstBaseline</span><span class="p">,</span> <span class="o">.</span><span class="n">bottom</span><span class="p">]</span>
+
+<span class="c1">// Shows guideline on label</span>
+<span class="n">label</span><span class="o">.</span><span class="nf">showGuide</span><span class="p">(</span><span class="nv">guideline</span><span class="p">:</span> <span class="n">guidelines</span><span class="p">)</span>
+</code></pre>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SY8rawValue03RawB0Qzvp"></a>
+                    <a name="//apple_ref/swift/Property/rawValue" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SY8rawValue03RawB0Qzvp">rawValue</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">rawValue</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:s9OptionSetP8rawValuex03RawD0Qz_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(rawValue:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:s9OptionSetP8rawValuex03RawD0Qz_tcfc">init(rawValue:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">rawValue</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC5DoricE9GuidelineV3topAEvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/top" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC5DoricE9GuidelineV3topAEvpZ">top</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Guide for top edge.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">top</span><span class="p">:</span> <span class="kt">UIView</span><span class="o">.</span><span class="kt">Guideline</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC5DoricE9GuidelineV6bottomAEvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/bottom" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC5DoricE9GuidelineV6bottomAEvpZ">bottom</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Guide for bottom edge.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">bottom</span><span class="p">:</span> <span class="kt">UIView</span><span class="o">.</span><span class="kt">Guideline</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC5DoricE9GuidelineV7leadingAEvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/leading" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC5DoricE9GuidelineV7leadingAEvpZ">leading</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Guide for leading edge.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">leading</span><span class="p">:</span> <span class="kt">UIView</span><span class="o">.</span><span class="kt">Guideline</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC5DoricE9GuidelineV8trailingAEvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/trailing" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC5DoricE9GuidelineV8trailingAEvpZ">trailing</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Guide for trailing edge.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">trailing</span><span class="p">:</span> <span class="kt">UIView</span><span class="o">.</span><span class="kt">Guideline</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC5DoricE9GuidelineV13firstBaselineAEvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/firstBaseline" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC5DoricE9GuidelineV13firstBaselineAEvpZ">firstBaseline</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Guide for firstBaseline.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">firstBaseline</span><span class="p">:</span> <span class="kt">UIView</span><span class="o">.</span><span class="kt">Guideline</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC5DoricE9GuidelineV12lastBaselineAEvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/lastBaseline" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC5DoricE9GuidelineV12lastBaselineAEvpZ">lastBaseline</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Guide for lastBaseline.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">lastBaseline</span><span class="p">:</span> <span class="kt">UIView</span><span class="o">.</span><span class="kt">Guideline</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC5DoricE9GuidelineV6heightAEvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/height" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC5DoricE9GuidelineV6heightAEvpZ">height</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Guide for height dimention.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">height</span><span class="p">:</span> <span class="kt">UIView</span><span class="o">.</span><span class="kt">Guideline</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC5DoricE9GuidelineV5widthAEvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/width" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC5DoricE9GuidelineV5widthAEvpZ">width</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Guide for width dimention.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">width</span><span class="p">:</span> <span class="kt">UIView</span><span class="o">.</span><span class="kt">Guideline</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC5DoricE9GuidelineV5basicAEvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/basic" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC5DoricE9GuidelineV5basicAEvpZ">basic</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Guide for top, bottom, leading edges.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">basic</span><span class="p">:</span> <span class="kt">UIView</span><span class="o">.</span><span class="kt">Guideline</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So6UIViewC5DoricE9GuidelineV3allAEvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/all" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So6UIViewC5DoricE9GuidelineV3allAEvpZ">all</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Guide for all edges, dimentions, baselines.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">all</span><span class="p">:</span> <span class="kt">UIView</span><span class="o">.</span><span class="kt">Guideline</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="https://github.com/jayeshk/Doric" target="_blank" rel="external">Jay K</a>. All rights reserved. (Last updated: 2019-02-07)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
