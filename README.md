@@ -1,8 +1,8 @@
 
 
-![Doric: Design System Foundation in Swift](./doric.png)
+![Doric: Design System Foundation in Swift](https://raw.githubusercontent.com/jayeshk/Doric/master/doric.png)
 
-![Documentation](./docs/badge.svg)
+[![Build Status](https://travis-ci.com/jayeshk/Doric.svg?branch=master)](https://travis-ci.com/jayeshk/Doric) [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/Doric.svg)](https://img.shields.io/cocoapods/v/Doric.svg) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-red.svg?style=flat)](https://github.com/Carthage/Carthage) [![Platform](https://img.shields.io/cocoapods/p/Doric.svg?style=flat)](https://github.com/jayeshk/Doric)
 
 # **Doric: Design System Foundation**
 
@@ -49,7 +49,7 @@ Design System foundation written in Swift. Protocol oriented, type safe, scalabl
 
 ## Demo
 Run demo project
-![Preview](./demo-screenshot.png)
+![Preview](https://raw.githubusercontent.com/jayeshk/Doric/master/demo-screenshot.png)
 
 ## Installation
 
