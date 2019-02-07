@@ -28,13 +28,13 @@ Design System foundation written in Swift. Protocol oriented, type safe, scalabl
 - [x] Layout spacing
 - [x] Themes
 - [x] UI Debugging helpers
-- [x] API Document & [Usage Documentation] ()
+- [x] [API Document](https://jayeshk.github.io/Doric/usage.html) & [Usage Documentation](Documentation/Usage.md)
 
 ## Roadmap
 
-> *Not on specific orders to achieve it.*
+> *Not in specific orders to achieve it.*
 
-- [ ] Add Debugging tools (Ruler etc.)
+- [ ] Add debugging tools (Ruler etc.)
 - [ ] Expand framework to create more Styles
 - [ ] Colour processing utilities
 - [ ] Trait based layouts (UITraitCollection)
@@ -46,6 +46,10 @@ Design System foundation written in Swift. Protocol oriented, type safe, scalabl
 - iOS 11.0+
 - Xcode 10.0+
 - Swift 4.2+
+
+## Demo
+Run demo project
+![Preview](./demo-screenshot.png)
 
 ## Installation
 
