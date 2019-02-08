@@ -1,0 +1,11 @@
+os: osx
+osx_image: xcode10.1
+branches:
+  only:
+    - master
+script:
+  - xcodebuild -version
+  - xcodebuild -showsdks
+
+  # Build Framework
+  - xcodebuild -project Doric.xcodeproj -scheme "Doric" -destination "OS=12.0,name=iPhone XS" -configuration Release
