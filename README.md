@@ -123,7 +123,7 @@ The Doric order was one of the three orders of ancient Greek and later Roman arc
 
 As the number of devices screen variants and environments are increasing, so there is need to create scalable interface Design Systems.
 
-Doric's primary goal is to create a system which allows you to manage design at scale for iOS. Consistency, scalability and efficiency across app are focused areas.
+Doric's primary goal is to create a system which allows you to manage design at scale for iOS. Consistency, scalability and efficiency across app are focused areas. See [Awesome Design Systems](https://github.com/alexpate/awesome-design-systems)
 
 #### **It is required to implement all parts of Doric?**
 
@@ -142,7 +142,7 @@ Major source of inspiration [Atomic Design](http://atomicdesign.bradfrost.com/)
 *Brad Frost, author of Atomic Design : “comprehensive collection of the bits and pieces that make up your interface”.*
 
 ---
-- [OpenSans Fonts](./Demo/Catalogue/Catalogue/open-sans/Apache\ License.txt)
+- [OpenSans Fonts](./Demo/Catalogue/Catalogue/open-sans/)
 
 ## License
 
