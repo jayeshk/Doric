@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "Doric"
-  s.version          = "1.0.0-beta"
+  s.version          = "1.0.0"
   s.summary          = "Doric is Design System foundation written in Swift. Protocol oriented and type safe scalable framework to create Design System."
   s.homepage         = "https://github.com/jayeshk/Doric"
   s.license          = { :type => 'MIT', :file => 'LICENSE' }

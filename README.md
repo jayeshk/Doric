@@ -41,6 +41,8 @@ Design System foundation written in Swift. Protocol oriented, type safe, scalabl
 - [ ] Accessibility for colour palettes
 - [ ] Sketch plugin to generate Styles
 
+## [Usage Guide](https://jayeshk.github.io/Doric/usage.html)
+
 ## Requirements
 
 - iOS 11.0+
@@ -48,7 +50,7 @@ Design System foundation written in Swift. Protocol oriented, type safe, scalabl
 - Swift 4.2+
 
 ## Demo
-Run demo project
+- Run demo project
 ![Preview](https://raw.githubusercontent.com/jayeshk/Doric/master/demo-screenshot.png)
 
 ## Installation
@@ -60,7 +62,7 @@ Run demo project
 To integrate `Doric`  using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-pod 'Doric', '~> 1.0.0-beta'
+pod 'Doric', '~> 1.0.0'
 ```
 
 ### Carthage
@@ -70,7 +72,7 @@ pod 'Doric', '~> 1.0.0-beta'
 . To integrate `Doric` into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "jayeshk/Doric" ~> 1.0.0-beta
+github "jayeshk/Doric" ~> 1.0.0
 ```
 
 ### Manually
