@@ -127,7 +127,7 @@
                 <a href="Protocols/DualThemeSwitcher.html">DualThemeSwitcher</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols/DynamicTypeCustomTextStyleFont.html">DynamicTypeCustomTextStyleFont</a>
+                <a href="Protocols.html#/s:5Doric30DynamicTypeCustomTextStyleFontP">DynamicTypeCustomTextStyleFont</a>
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/DynamicTypeFont.html">DynamicTypeFont</a>
@@ -145,7 +145,7 @@
                 <a href="Protocols/Font.html">Font</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols/FontConvertible.html">FontConvertible</a>
+                <a href="Protocols.html#/s:5Doric15FontConvertibleP">FontConvertible</a>
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/FullScale.html">FullScale</a>
@@ -234,10 +234,7 @@
                 <a href="Structs/SystemTypography.html">SystemTypography</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs/ThemeNotification.html">ThemeNotification</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Structs/Transparency.html">Transparency</a>
+                <a href="Structs.html#/s:5Doric17ThemeNotificationV">ThemeNotification</a>
               </li>
             </ul>
           </li>
@@ -261,9 +258,9 @@
         <section>
           <section class="section">
             
-            <p><img src="./doric.png" alt="Doric: Design System Foundation in Swift"></p>
+            <p><img src="https://raw.githubusercontent.com/jayeshk/Doric/master/doric.png" alt="Doric: Design System Foundation in Swift"></p>
 
-<p><img src="./docs/badge.svg" alt="Documentation"></p>
+<p><a href="https://travis-ci.com/jayeshk/Doric"><img src="https://travis-ci.com/jayeshk/Doric.svg?branch=master" alt="Build Status"></a> <a href="https://img.shields.io/cocoapods/v/Doric.svg"><img src="https://img.shields.io/cocoapods/v/Doric.svg" alt="CocoaPods Compatible"></a> <a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-red.svg?style=flat" alt="Carthage compatible"></a> <a href="https://github.com/jayeshk/Doric"><img src="https://img.shields.io/cocoapods/p/Doric.svg?style=flat" alt="Platform"></a></p>
 <h1 id='strong-doric-design-system-foundation-strong' class='heading'><strong>Doric: Design System Foundation</strong></h1>
 
 <p>Design System foundation written in Swift. Protocol oriented, type safe, scalable framework for iOS.</p>
@@ -290,22 +287,23 @@
 <li>[x] Layout spacing</li>
 <li>[x] Themes</li>
 <li>[x] UI Debugging helpers</li>
-<li>[x] API Document &amp; <a href="">Usage Documentation</a></li>
+<li>[x] <a href="https://jayeshk.github.io/Doric/usage.html">API Document</a> &amp; <a href="Documentation/Usage.md">Usage Documentation</a></li>
 </ul>
 <h2 id='roadmap' class='heading'>Roadmap</h2>
 
 <blockquote>
-<p><em>Not on specific orders to achieve it.</em></p>
+<p><em>Not in specific orders to achieve it.</em></p>
 </blockquote>
 
 <ul>
-<li>[ ] Add Debugging tools (Ruler etc.)</li>
+<li>[ ] Add debugging tools (Ruler etc.)</li>
 <li>[ ] Expand framework to create more Styles</li>
 <li>[ ] Colour processing utilities</li>
 <li>[ ] Trait based layouts (UITraitCollection)</li>
 <li>[ ] Accessibility for colour palettes</li>
 <li>[ ] Sketch plugin to generate Styles</li>
 </ul>
+<h2 id='a-href-https-jayeshk-github-io-doric-usage-html-usage-guide-a' class='heading'><a href="https://jayeshk.github.io/Doric/usage.html">Usage Guide</a></h2>
 <h2 id='requirements' class='heading'>Requirements</h2>
 
 <ul>
@@ -313,20 +311,26 @@
 <li>Xcode 10.0+</li>
 <li>Swift 4.2+</li>
 </ul>
+<h2 id='demo' class='heading'>Demo</h2>
+
+<ul>
+<li>Run demo project
+<img src="https://raw.githubusercontent.com/jayeshk/Doric/master/demo-screenshot.png" alt="Preview"></li>
+</ul>
 <h2 id='installation' class='heading'>Installation</h2>
 <h3 id='cocoapods' class='heading'>CocoaPods</h3>
 
 <p><a href="https://cocoapods.org">CocoaPods</a> is an application level dependency manager for the Objective-C, Swift and any other languages that run on the Objective-C runtime that provides a standard format for managing external libraries. For usage and installation instructions visit <a href="https://cocoapods.org">site</a></p>
 
 <p>To integrate <code><a href="Classes/Doric.html">Doric</a></code>  using CocoaPods, specify it in your <code>Podfile</code>:</p>
-<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'Doric'</span><span class="p">,</span> <span class="s1">'~&gt; 1.0.0-beta'</span>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'Doric'</span><span class="p">,</span> <span class="s1">'~&gt; 1.0.0'</span>
 </code></pre>
 <h3 id='carthage' class='heading'>Carthage</h3>
 
 <p><a href="https://github.com/Carthage/Carthage">Carthage</a> builds your dependencies and provides you with binary frameworks, but you retain full control over your project structure and setup. Carthage does not automatically modify your project files or your build settings.</p>
 
 <p>. To integrate <code><a href="Classes/Doric.html">Doric</a></code> into your Xcode project using Carthage, specify it in your <code>Cartfile</code>:</p>
-<pre class="highlight plaintext"><code>github "jayeshk/Doric" ~&gt; 1.0.0-beta
+<pre class="highlight plaintext"><code>github "jayeshk/Doric" ~&gt; 1.0.0
 </code></pre>
 <h3 id='manually' class='heading'>Manually</h3>
 
@@ -380,7 +384,7 @@
 
 <p>As the number of devices screen variants and environments are increasing, so there is need to create scalable interface Design Systems.</p>
 
-<p>Doric&rsquo;s primary goal is to create a system which allows you to manage design at scale for iOS. Consistency, scalability and efficiency across app are focused areas.</p>
+<p>Doric&rsquo;s primary goal is to create a system which allows you to manage design at scale for iOS. Consistency, scalability and efficiency across app are focused areas. See <a href="https://github.com/alexpate/awesome-design-systems">Awesome Design Systems</a></p>
 <h4 id='strong-it-is-required-to-implement-all-parts-of-doric-strong' class='heading'><strong>It is required to implement all parts of Doric?</strong></h4>
 
 <p>Doric provides various building blocks to implement interface. All blocks can be used independently or can be composed as needed. For example your app can use Typography only or Color Palettes. Better practice would be compose all them into single Design System.</p>
@@ -399,7 +403,7 @@
 <hr>
 
 <ul>
-<li><a href="./Demo/Catalogue/Catalogue/open-sans/Apache%20License.txt">OpenSans Fonts</a></li>
+<li><a href="./Demo/Catalogue/Catalogue/open-sans/">OpenSans Fonts</a></li>
 </ul>
 <h2 id='license' class='heading'>License</h2>
 
@@ -408,7 +412,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="https://github.com/jayeshk/Doric" target="_blank" rel="external">Jay K</a>. All rights reserved. (Last updated: 2019-02-07)</p>
+          <p>&copy; 2019 <a class="link" href="https://github.com/jayeshk/Doric" target="_blank" rel="external">Jay K</a>. All rights reserved. (Last updated: 2019-02-10)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
