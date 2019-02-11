@@ -113,7 +113,7 @@ If you can integrate project manually as below using git submodule
 Doric is open to contribute, see contribution notes.
   - If you **want to contribute**, submit a pull request.
   - If you **found a bug**, open an issue.
-  - If you need **help with a feature or need to discuss best practices** please see **usage document** , still anything to discuss contact me.
+  - If you need **help with a feature or need to discuss best practices** please see **usage document** , still anything to discuss contact me (doricdesignsystem@gmail.com).
 
 ## FAQ
 
