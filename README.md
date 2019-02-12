@@ -3,6 +3,7 @@
 ![Doric: Design System Foundation in Swift](https://raw.githubusercontent.com/jayeshk/Doric/master/doric.png)
 
 [![Build Status](https://travis-ci.com/jayeshk/Doric.svg?branch=master)](https://travis-ci.com/jayeshk/Doric) [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/Doric.svg)](https://img.shields.io/cocoapods/v/Doric.svg) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-red.svg?style=flat)](https://github.com/Carthage/Carthage) [![Platform](https://img.shields.io/cocoapods/p/Doric.svg?style=flat)](https://github.com/jayeshk/Doric)
+![Documentation](https://github.com/jayeshk/Doric/blob/master/docs/badge.svg)
 
 # **Doric: Design System Foundation**
 
