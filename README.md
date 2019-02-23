@@ -51,7 +51,6 @@ Design System foundation written in Swift. Protocol oriented, type safe, scalabl
 - Swift 4.2+
 
 ## Demo
-- Run demo project
 ![Preview](https://raw.githubusercontent.com/jayeshk/Doric/master/demo-screenshot.png) ![Preview](https://raw.githubusercontent.com/jayeshk/Doric/master/screens-preview.gif)
 
 ## Installation
