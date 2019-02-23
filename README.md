@@ -31,6 +31,11 @@ Design System foundation written in Swift. Protocol oriented, type safe, scalabl
 - [x] UI Debugging helpers
 - [x] [API Document](https://jayeshk.github.io/Doric/usage.html) & [Usage Documentation](Documentation/Usage.md)
 
+## Sketch Plugin
+
+- See [DoricSnippet - BETA](https://github.com/jayeshk/DoricSnippet)
+- Generates Swift code snippets for Doric framework.
+
 ## Roadmap
 
 > *Not in specific orders to achieve it.*
@@ -40,10 +45,10 @@ Design System foundation written in Swift. Protocol oriented, type safe, scalabl
 - [ ] Colour processing utilities
 - [ ] Trait based layouts (UITraitCollection)
 - [ ] Accessibility for colour palettes
-- [ ] Sketch plugin to generate Styles
+- [ ] Sketch plugin to generate styles - [In progress](https://github.com/jayeshk/DoricSnippet)
 
 ## [Usage Guide](https://jayeshk.github.io/Doric/usage.html)
-
+- See documentation
 ## Requirements
 
 - iOS 11.0+
