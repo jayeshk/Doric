@@ -40,12 +40,12 @@ Design System foundation written in Swift. Protocol oriented, type safe, scalabl
 
 > *Not in specific orders to achieve it.*
 
-- [ ] Add debugging tools (Ruler etc.)
+- [ ] Add debugging tools (Ruler etc.) [In progress]
 - [ ] Expand framework to create more Styles
 - [ ] Colour processing utilities
-- [ ] Trait based layouts (UITraitCollection)
+- [ ] Trait based layouts (UITraitCollection) [In progress]
 - [ ] Accessibility for colour palettes
-- [ ] Sketch plugin to generate styles - [In progress](https://github.com/jayeshk/DoricSnippet)
+- [x] Sketch plugin to generate palette. [Try here](https://github.com/jayeshk/DoricSnippet)
 
 ## [Usage Guide](https://jayeshk.github.io/Doric/usage.html)
 - See documentation
