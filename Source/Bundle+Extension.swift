@@ -24,7 +24,7 @@ import UIKit
 
 public extension Bundle {
     /// Find bundle for current framework
-    public static var moduleBundle: Bundle? {
+    static var moduleBundle: Bundle? {
         let bundle = Bundle(for: Doric.self)
         if let path = bundle.path(forResource: "Doric", ofType: "bundle") {
             return Bundle(path: path)

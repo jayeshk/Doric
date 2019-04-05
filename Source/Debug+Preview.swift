@@ -67,7 +67,7 @@ public extension Typography {
     ///
     /// Only for debuging.
     /// - Returns: all items
-    public static func previewItems() -> [NameFonts] {
+    static func previewItems() -> [NameFonts] {
         return []
     }
 }
@@ -97,7 +97,7 @@ public extension SystemTypography {
 }
 
 public extension DynamicTypography where FontStyle == UIFont.TextStyle {
-    public static func namedTypography() -> [NameFonts] {
+    static func namedTypography() -> [NameFonts] {
         var fonts: [NameFonts] = []
         fonts.append(("body", preferredFont(forTextStyle: .body)))
         fonts.append(("title1", preferredFont(forTextStyle: .title1)))
@@ -146,7 +146,7 @@ public extension ExtendedDarkenColorSet {
 }
 
 public extension ColorPalette {
-    public static var namedColors: [NamedColor] {
+    static var namedColors: [NamedColor] {
         var list: [NamedColor] = []
         list.append(contentsOf: namedLightColors)
         list.append(("base", base))
@@ -156,7 +156,7 @@ public extension ColorPalette {
 }
 
 public extension LargerColorPalette {
-    public static var namedColors: [NamedColor] {
+    static var namedColors: [NamedColor] {
         var list: [NamedColor] = []
         list.append(contentsOf: namedExdenedLightColors)
         list.append(contentsOf: namedLightColors)
@@ -172,7 +172,7 @@ public extension IconSize {
     ///
     /// Only for debuging.
     /// - Returns: all items
-    public static func previewItems() -> [(String, IconSize)] {
+    static func previewItems() -> [(String, IconSize)] {
         return [
             ("small", .small),
             ("medium", .medium),
@@ -186,30 +186,30 @@ public extension SemanticColorPalette {
     ///
     /// Only for debuging.
     /// - Returns: all items
-    public static func previewItems() -> [NamedColor] {
+    static func previewItems() -> [NamedColor] {
         var namedColors: [NamedColor] = []
-
+        
         let successColors = success.namedColors.map({ (nameColor) -> NamedColor in
             ("Success - \(nameColor.0)", nameColor.1)
         })
-
+        
         let warningColors = warning.namedColors.map({ (nameColor) -> NamedColor in
             ("Warning - \(nameColor.0)", nameColor.1)
         })
-
+        
         let infoColors = info.namedColors.map({ (nameColor) -> NamedColor in
             ("Info - \(nameColor.0)", nameColor.1)
         })
-
+        
         let errorColors = error.namedColors.map({ (nameColor) -> NamedColor in
             ("Error - \(nameColor.0)", nameColor.1)
         })
-
+        
         namedColors.append(contentsOf: successColors)
         namedColors.append(contentsOf: warningColors)
         namedColors.append(contentsOf: infoColors)
         namedColors.append(contentsOf: errorColors)
-
+        
         return namedColors
     }
 }

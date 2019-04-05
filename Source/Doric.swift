@@ -25,18 +25,18 @@ import UIKit
 /// Instance to access debug tools i.e. GraphView.
 public class Doric: NSObject {
     private override init() {}
-
+    
     /// Shared instance to access various properties and settings for graph debug view.
     public static let shared = Doric()
-
+    
     /**
      Settings to configure graph view.
-
+     
      Create instance of `Settings` and pass to 'Doric' to refect changes for graphView. Will refact only before view presented.
      */
-
+    
     public var settings: Settings = Settings.default()
-
+    
     /// Internal window to keep track of touchable area i.e close button.
     private class DebugWindow: UIWindow {
         // Keep reference of control to allow touch
@@ -46,13 +46,13 @@ public class Doric: NSObject {
             return rect.contains(point)
         }
     }
-
+    
     /// Internal window on top of views will be displayed.
     private var window: DebugWindow?
-
+    
     /**
      A Boolean value that determines whether the debugger graph view is hidden.
-
+     
      Setting the value of this property to true hides the graph and setting it to false shows the graph. The default value is false.
      */
     public var isHidden: Bool = true {
@@ -70,27 +70,27 @@ public class Doric: NSObject {
 
 fileprivate extension Doric {
     // Shows debugger window
-    fileprivate func showGraphView() {
+    private func showGraphView() {
         if window != nil {
             return
         }
-
+        
         let viewController = DesignDebuggerViewController(settings: settings)
         viewController.settings = settings
-
+        
         window = DebugWindow(frame: UIScreen.main.bounds)
         window?.windowLevel = UIWindow.Level.statusBar + 1
         window?.rootViewController = viewController
         window?.makeKeyAndVisible()
         window?.button = viewController.closeButton
     }
-
+    
     // Hides debugger window
-    fileprivate func dismissGraphView() {
+    private func dismissGraphView() {
         guard window != nil else {
             return
         }
-
+        
         window?.button = nil
         window?.resignKey()
         window?.rootViewController = nil

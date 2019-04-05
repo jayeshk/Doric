@@ -24,7 +24,7 @@ import UIKit
 
 public extension UIFont {
     /// Fallback fonts wherever font operations failed to provide requested fonts.
-    public class var `default`: UIFont {
+    class var `default`: UIFont {
         return UIFont.systemFont(ofSize: 17.0)
     }
 }
@@ -37,7 +37,7 @@ public protocol TypographyOptions {
 
 public extension TypographyOptions {
     /// Default scales fonts.
-    public static var shouldScaleFont: Bool {
+    static var shouldScaleFont: Bool {
         return true
     }
 }
@@ -45,7 +45,7 @@ public extension TypographyOptions {
 /// Typography provides static size fonts as per `FontStyle`
 public protocol Typography {
     associatedtype FontStyle
-
+    
     /// Returns an instance of the font for the specified `FontStyle` and with font size.
     ///
     /// - Parameter style: FontStyle
@@ -66,10 +66,10 @@ public protocol DynamicTypography: Typography, TypographyOptions {
 public struct FontDescription {
     /// Font name.
     public let name: String
-
+    
     /// Font size.
     public let size: CGFloat
-
+    
     public init(name: String, size: CGFloat) {
         self.name = name
         self.size = size
@@ -90,17 +90,17 @@ extension FontDescription: FontConvertible {
 /// Represnts font set.
 public protocol Font {
     associatedtype TextStyle: Hashable
-
+    
     /// List of fonts and their text style
     var fonts: [TextStyle: FontConvertible] { get }
-
+    
     /// Creates font for text style
     func font(forTextStyle textStyle: TextStyle) -> UIFont
 }
 
 public extension Font {
     /// Creates font for text style
-    public func font(forTextStyle textStyle: TextStyle) -> UIFont {
+    func font(forTextStyle textStyle: TextStyle) -> UIFont {
         guard let font = fonts[textStyle]?.font else {
             return UIFont.default
         }
@@ -112,7 +112,7 @@ public extension Font {
 public protocol SystemFont: Font where TextStyle == UIFont.TextStyle {}
 
 public extension SystemFont {
-    public func font(forTextStyle textStyle: UIFont.TextStyle) -> UIFont {
+    func font(forTextStyle textStyle: UIFont.TextStyle) -> UIFont {
         return fonts[textStyle]?.font ?? UIFont.default
     }
 }
@@ -121,7 +121,7 @@ public extension SystemFont {
 public protocol DynamicTypeFont: SystemFont {
     /// Dynamically scalled font for FontStyle.
     func preferredFont(forTextStyle textStyle: UIFont.TextStyle) -> UIFont
-
+    
     /// Dynamically scalled font for FontStyle with maximumPointSize & traitCollection.
     func preferredFont(forTextStyle textStyle: UIFont.TextStyle,
                        maximumPointSize: CGFloat,
@@ -132,16 +132,16 @@ public protocol DynamicTypeFont: SystemFont {
 
 public extension DynamicTypeFont {
     /// Dynamically scalled font for FontStyle.
-    public func preferredFont(forTextStyle textStyle: UIFont.TextStyle) -> UIFont {
+    func preferredFont(forTextStyle textStyle: UIFont.TextStyle) -> UIFont {
         guard let font = fonts[textStyle]?.font else {
             return UIFont.preferredFont(forTextStyle: textStyle)
         }
-
+        
         return UIFontMetrics(forTextStyle: textStyle).scaledFont(for: font)
     }
-
+    
     /// Dynamically scalled font for FontStyle with maximumPointSize & traitCollection.
-    public func preferredFont(forTextStyle textStyle: UIFont.TextStyle, maximumPointSize: CGFloat, compatibleWith traitCollection: UITraitCollection? = nil) -> UIFont {
+    func preferredFont(forTextStyle textStyle: UIFont.TextStyle, maximumPointSize: CGFloat, compatibleWith traitCollection: UITraitCollection? = nil) -> UIFont {
         guard let font = fonts[textStyle]?.font else {
             return UIFont.preferredFont(forTextStyle: textStyle, compatibleWith: traitCollection)
         }

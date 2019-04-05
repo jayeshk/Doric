@@ -33,7 +33,7 @@ extension Notification {
     public var theme: Theme? {
         return userInfo?[String.themeKey] as? Theme
     }
-
+    
     /// Create `Notification` using `Theme`
     ///
     /// - Parameters:
@@ -57,7 +57,7 @@ extension NotificationCenter {
 
 fileprivate extension String {
     /// Key for theme reference in notification instance.
-    fileprivate static let themeKey = "com.doric.theme.key"
+    static let themeKey = "com.doric.theme.key"
 }
 
 /// Listens events for theme
