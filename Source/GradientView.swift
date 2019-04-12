@@ -25,39 +25,39 @@ import UIKit
 /// Creates gradient view
 open class GradientView: UIView {
     var gradientLayer: CAGradientLayer!
-
+    
     /// Start point of gradient, by default (0.0, 0.5).
     open var startPoint: CGPoint = CGPoint(x: 0.0, y: 0.5) {
         didSet {
             setNeedsLayout()
         }
     }
-
+    
     /// End point of gradient, by default (0.0, 0.5).
     open var endPoint: CGPoint = CGPoint(x: 1.0, y: 0.5) {
         didSet {
             setNeedsLayout()
         }
     }
-
+    
     /// Start color of gradient.
     open var startColor: UIColor = .black {
         didSet {
             setNeedsLayout()
         }
     }
-
+    
     /// End color of gradient.
     open var endColor: UIColor = .white {
         didSet {
             setNeedsLayout()
         }
     }
-
+    
     open override class var layerClass: AnyClass {
         return CAGradientLayer.self
     }
-
+    
     open override func layoutSubviews() {
         gradientLayer = layer as? CAGradientLayer
         gradientLayer.colors = [startColor.cgColor, endColor.cgColor]
@@ -73,7 +73,7 @@ public extension GradientView {
     ///
     /// - Parameter gradient: GradientColor defination, see `GradientColor`
     /// - SeeAlso:- `GradientColor`
-    public convenience init(gradient: GradientColor) {
+    convenience init(gradient: GradientColor) {
         self.init(frame: .zero)
         startColor = gradient.startColor
         endColor = gradient.endColor

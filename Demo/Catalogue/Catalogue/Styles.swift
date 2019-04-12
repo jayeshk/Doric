@@ -58,94 +58,94 @@ public protocol TableViewCellStyle: Style where TargetControl == UITableViewCell
 // MARK: - Helper extension
 
 public extension UITableViewCell {
-    public func applyStyle<T: TableViewCellStyle>(tableViewCellStyle: T) {
+    func applyStyle<T: TableViewCellStyle>(tableViewCellStyle: T) {
         tableViewCellStyle.performStyle(on: self)
     }
 }
 
 public extension UIButton {
-    public convenience init<T: ButtonStyle>(_ style: T) {
+    convenience init<T: ButtonStyle>(_ style: T) {
         self.init(frame: .zero)
         style.performStyle(on: self)
     }
 }
 
 public extension UILabel {
-    public convenience init<T: LabelStyle>(_ style: T) {
+    convenience init<T: LabelStyle>(_ style: T) {
         self.init(frame: .zero)
         style.performStyle(on: self)
     }
 }
 
 public extension UIView {
-    public convenience init<T: ViewStyle>(style: T) {
+    convenience init<T: ViewStyle>(style: T) {
         self.init(frame: .zero)
         style.performStyle(on: self)
     }
 }
 
 public extension UIView {
-    public func applyStyle<T: ViewStyle>(viewStyle: T) {
+    func applyStyle<T: ViewStyle>(viewStyle: T) {
         viewStyle.performStyle(on: self)
     }
 }
 
 public extension UIButton {
-    public func applyStyle<T: ButtonStyle>(buttonStyle: T) {
+    func applyStyle<T: ButtonStyle>(buttonStyle: T) {
         buttonStyle.performStyle(on: self)
     }
 }
 
 public extension UILabel {
-    public func applyStyle<T: LabelStyle>(labelStyle: T) {
+    func applyStyle<T: LabelStyle>(labelStyle: T) {
         labelStyle.performStyle(on: self)
     }
 }
 
 public extension UISwitch {
-    public func applyStyle<T: SwitchStyle>(switchStyle: T) {
+    func applyStyle<T: SwitchStyle>(switchStyle: T) {
         switchStyle.performStyle(on: self)
     }
 }
 
 public extension UISlider {
-    public func applyStyle<T: SliderStyle>(sliderStyle: T) {
+    func applyStyle<T: SliderStyle>(sliderStyle: T) {
         sliderStyle.performStyle(on: self)
     }
 }
 
 public extension UISegmentedControl {
-    public func applyStyle<T: SegmentedControlStyle>(segmentControlStyle: T) {
+    func applyStyle<T: SegmentedControlStyle>(segmentControlStyle: T) {
         segmentControlStyle.performStyle(on: self)
     }
 }
 
 public extension UIBarButtonItem {
-    public func applyStyle<T: BarButtonItemStyle>(barButtonItemStyle: T) {
+    func applyStyle<T: BarButtonItemStyle>(barButtonItemStyle: T) {
         barButtonItemStyle.performStyle(on: self)
     }
 }
 
 public extension UINavigationBar {
-    public func applyStyle<T: NavigationStyle>(navigationStyle: T) {
+    func applyStyle<T: NavigationStyle>(navigationStyle: T) {
         navigationStyle.performStyle(on: self)
     }
 }
 
 public extension UIPageControl {
-    public func applyStyle<T: PageControlStyle>(pageControlStyle: T) {
+    func applyStyle<T: PageControlStyle>(pageControlStyle: T) {
         pageControlStyle.performStyle(on: self)
     }
 }
 
 public extension UIProgressView {
-    public func applyStyle<T: ProgressViewStyle>(progressViewStyle: T) {
+    func applyStyle<T: ProgressViewStyle>(progressViewStyle: T) {
         progressViewStyle.performStyle(on: self)
     }
 }
 
 public extension UITextField {
-    public func applyStyle<T: TextFieldStyle>(textfieldStyle: T) {
+    func applyStyle<T: TextFieldStyle>(textfieldStyle: T) {
         textfieldStyle.performStyle(on: self)
     }
 }
@@ -191,7 +191,7 @@ public enum AppLabelStyle {
 extension AppLabelStyle: LabelStyle {
     public func performStyle(on label: UILabel) {
         let textColor = DemoDesignSystem.colorPalette.grayscale.darken4
-
+        
         switch self {
         case .captions:
             label.font = DemoDesignSystem.typography.font(forTextStyle: .caption1)
@@ -389,18 +389,18 @@ public enum AppBarButtonItemStyle {
 extension AppBarButtonItemStyle: BarButtonItemStyle {
     public func performStyle(on barItem: UIBarButtonItem) {
         let barItemFont = DemoDesignSystem.typography.font(forTextStyle: .body)
-
+        
         switch self {
         case .regular:
             barItem.setTitleTextAttributes([
                 NSAttributedString.Key.font: barItemFont,
                 NSAttributedString.Key.foregroundColor: UIColor.white
-            ], for: .normal)
-
+                ], for: .normal)
+            
             barItem.setTitleTextAttributes([
                 NSAttributedString.Key.font: barItemFont,
                 NSAttributedString.Key.foregroundColor: UIColor.white
-            ], for: .highlighted)
+                ], for: .highlighted)
             barItem.tintColor = UIColor.white
         }
     }

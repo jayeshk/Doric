@@ -32,29 +32,29 @@ public protocol LayoutValueRepresentable {
 
 public extension LayoutValueRepresentable {
     /// One pixel value based on device scale
-    public static var pixel: CGFloat {
+    static var pixel: CGFloat {
         return 1.0 / UIScreen.main.scale
     }
 }
 
 public extension LayoutValueRepresentable {
     /// multiply value with rawValue.
-    public func by(_ multiplier: CGFloat) -> CGFloat {
+    func by(_ multiplier: CGFloat) -> CGFloat {
         return rawValue * multiplier
     }
-
+    
     /// edgeInsets with values.
-    public func edgeInsets() -> UIEdgeInsets {
+    func edgeInsets() -> UIEdgeInsets {
         return UIEdgeInsets(top: rawValue, left: rawValue, bottom: rawValue, right: rawValue)
     }
-
+    
     /// create horizontal rect with rawValue.
-    public func hRect(_ value: Self) -> UIEdgeInsets {
+    func hRect(_ value: Self) -> UIEdgeInsets {
         return UIEdgeInsets(top: rawValue, left: value.rawValue, bottom: rawValue, right: value.rawValue)
     }
-
+    
     /// create vertical rect with rawValue.
-    public func vRect(_ value: Self) -> UIEdgeInsets {
+    func vRect(_ value: Self) -> UIEdgeInsets {
         return UIEdgeInsets(top: value.rawValue, left: rawValue, bottom: value.rawValue, right: rawValue)
     }
 }
@@ -75,28 +75,28 @@ public extension LayoutValueRepresentable {
 public enum Space: CGFloat, LayoutValueRepresentable {
     /// p0
     case p0 = 0.0
-
+    
     /// p1
     case p1 = 8.0
-
+    
     /// p2
     case p2 = 16.0
-
+    
     /// p3
     case p3 = 24.0
-
+    
     /// p4
     case p4 = 32.0
-
+    
     /// p5
     case p5 = 40.0
-
+    
     /// p6
     case p6 = 48.0
-
+    
     /// p7
     case p7 = 56.0
-
+    
     /// p8
     case p8 = 64.0
 }

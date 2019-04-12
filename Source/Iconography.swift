@@ -24,7 +24,7 @@ import UIKit
 
 public extension UIImageView {
     /// set image with tint color.
-    public func tintedImageWith(color: UIColor) {
+    func tintedImageWith(color: UIColor) {
         image = image?.withRenderingMode(.alwaysTemplate)
         tintColor = color
     }
@@ -40,7 +40,7 @@ public extension UIImage {
     static func template(named: String, bundle: Bundle = Bundle.main) -> UIImage? {
         return UIImage(named: named, in: bundle, compatibleWith: nil)?.withRenderingMode(.alwaysTemplate)
     }
-
+    
     /// Create template image with color.
     ///
     /// - Parameters:
@@ -51,7 +51,7 @@ public extension UIImage {
     static func template(named: String, bundle: Bundle = Bundle.main, tintColor: UIColor) -> UIImage? {
         return template(named: named, bundle: bundle)?.tint(with: tintColor)
     }
-
+    
     private func tint(with color: UIColor) -> UIImage? {
         UIGraphicsBeginImageContextWithOptions(size, false, scale)
         color.set()

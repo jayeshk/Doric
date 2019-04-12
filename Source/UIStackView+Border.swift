@@ -29,7 +29,7 @@ public extension UIStackView {
     /// - Parameters:
     ///   - color: Color for border, by default 'black' color.
     ///   - width: width of border, by default 1.0.
-    public func enableBorder(_ color: UIColor = UIColor.black, width: CGFloat = 1.0) {
+    func enableBorder(_ color: UIColor = UIColor.black, width: CGFloat = 1.0) {
         let borderView = UIView(frame: CGRect.zero)
         borderView.translatesAutoresizingMaskIntoConstraints = false
         borderView.layer.borderColor = color.cgColor
@@ -47,10 +47,10 @@ public extension UIView {
     ///   - view: target view in which borders will be enabled.
     ///   - color: Color for border, by default 'black' color.
     ///   - width: width of border, by default 1.0.
-    public static func recursiveEnableBorder(_ view: UIView, color: UIColor = UIColor.black, width: CGFloat = 1.0) {
+    static func recursiveEnableBorder(_ view: UIView, color: UIColor = UIColor.black, width: CGFloat = 1.0) {
         view.layer.borderColor = color.cgColor
         view.layer.borderWidth = width
-
+        
         if let stackView = view as? UIStackView {
             stackView.enableBorder(color, width: width)
             stackView.arrangedSubviews.forEach { arrangedView in

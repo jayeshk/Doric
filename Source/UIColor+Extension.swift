@@ -38,8 +38,8 @@ public extension UIColor {
     /// - Parameters:
     ///   - hexString: Valid hexadecimal string
     ///   - alpha: Alpha value of color, default is 1.0
-
-    public convenience init(_ hexString: String, alpha: CGFloat = 1.0) {
+    
+    convenience init(_ hexString: String, alpha: CGFloat = 1.0) {
         let scanner = Scanner(string: hexString)
         scanner.scanLocation = hexString.hasPrefix("#") ? 1 : 0
         var intRGB: UInt64 = 0
@@ -49,9 +49,9 @@ public extension UIColor {
         let blue = intRGB & 0xFF
         self.init(red: CGFloat(red) / 0xFF, green: CGFloat(green) / 0xFF, blue: CGFloat(blue) / 0xFF, alpha: alpha)
     }
-
+    
     ///  hexadecimal (a hex triplet) representation of current color.
-    public var hexString: String {
+    var hexString: String {
         var red: CGFloat = 0.0
         var green: CGFloat = 0.0
         var blue: CGFloat = 0.0
@@ -71,7 +71,7 @@ extension UIColor {
     func darker(by factor: CGFloat) -> UIColor {
         return adjustBrightnessOrSaturation(by: -factor)
     }
-
+    
     /// Creates ligher color by factor, Adjusts brightness or saturation of color by factor
     ///
     /// Lighter of white will be always white
@@ -80,25 +80,25 @@ extension UIColor {
     func lighter(by factor: CGFloat) -> UIColor {
         return adjustBrightnessOrSaturation(by: factor)
     }
-
+    
     /// Adjusts brightness or saturation of color by factor
     ///
     /// - Parameter factor: factor should between 0.0 - 1.0
     /// - Returns: newly created color after adjustment
     fileprivate func adjustBrightnessOrSaturation(by factor: CGFloat) -> UIColor {
         var currentHue: CGFloat = 0,
-            currentSaturation: CGFloat = 0,
-            currentBrigthness: CGFloat = 0,
-            currentAlpha: CGFloat = 0
-
+        currentSaturation: CGFloat = 0,
+        currentBrigthness: CGFloat = 0,
+        currentAlpha: CGFloat = 0
+        
         // Default return current color
         guard getHue(&currentHue,
                      saturation: &currentSaturation,
                      brightness: &currentBrigthness,
                      alpha: &currentAlpha) else {
-            return self
+                        return self
         }
-
+        
         // Adjust color by increasing brightness or reducing saturation and derived values are between 0.0 - 1.0
         if currentBrigthness < 1.0 {
             return UIColor(hue: currentHue,
