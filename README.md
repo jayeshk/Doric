@@ -52,8 +52,8 @@ Design System foundation written in Swift. Protocol oriented, type safe, scalabl
 ## Requirements
 
 - iOS 11.0+
-- Xcode 10.0+
-- Swift 4.2+
+- Xcode 10.2+
+- Swift 5
 
 ## Demo
 ![Preview](https://raw.githubusercontent.com/jayeshk/Doric/master/demo-screenshot.png) ![Preview](https://raw.githubusercontent.com/jayeshk/Doric/master/screens-preview.gif)
